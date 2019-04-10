@@ -4,7 +4,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="shortcut icon" href="pics/icon2.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <link rel="stylesheet" href="css/gallery.min.css">
+    
   </head>
   <body>
     <div class="title">
@@ -20,32 +22,88 @@
 
 <!-- TEXT&GIF -->
 
-      <div class="Rtable Rtable--3cols">
+      <div class="Rtable Rtable--2cols">
                         
-            <div class="Rtable-cell " ><img
+            <div class="Rtable-cell-slim " >
+              
+              <!-- <img
     
                 src="pics/and_movieme.gif"
                 alt="Gifand"
                 style="height:480px;"
-              /></div>
-            <div class="Rtable-cell" ><p 
-                > <big>MovieMe is a user friendly mobile app that can help you to find movie by genres.</p> <p> Use picker
-                     to choose the genre and find the movie. You can discover a big variety of movies, whether you prefer 
-                    animation, crime, horror or even  comedy - with MovieMe you'll find everything! </p>
-                <p>MovieMe app is based on JavaScript and React Native. </big></p></div>
+              /> -->
             
-            <div class="Rtable-cell"  ><img
-    
-                src="pics/ios_movieme.gif"
-                alt="Gifios"
-                style="height:480px;"
-              /></div>
+
+              <div class="carousel-container">
+                  <div class="carousel my-carousel carousel--translate">
+                    <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked"/>
+                    <input class="carousel__activator" type="radio" name="carousel" id="G"/>
+                
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="F"></label>
+                      <label class="carousel__control carousel__control--forward" for="G"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="G"></label>
+                      <label class="carousel__control carousel__control--forward" for="F"></label>
+                    </div>
+                    
+                    <div class="carousel__track">
+                      <li class="carousel__slide">
+                        <img
+                    
+                        src="pics/and_movieme.gif"
+                        alt="Gifand"
+                        style="height:480px; margin: 40px 0 0 30px;"
+                      />      </li>
+                      <li class="carousel__slide">
+                        <img
+                    
+                        src="pics/ios.gif"
+                        alt="Gifios"
+                        style="height:550px; margin: 0 0 0 10px;"
+                      />      </li>
+                     
+                    </div>
+                    <div class="carousel__indicators">
+                      <label class="carousel__indicator" for="F"></label>
+                      <label class="carousel__indicator" for="G"></label>
+                
+                    </div>
+                  </div>
+                </div>
+
+
+            </div>
+            <div class="Rtable-cell-fat app-description" align="left">
+              <div class="app-description-text">
+
+              <p>
+                MovieMe is a user friendly mobile app that can help you to find movie by genres.
+              </p> 
+              <p> 
+                Use picker
+                     to choose the genre and find the movie. You can discover a big variety of movies, whether you prefer 
+                    animation, crime, horror or even  comedy - with MovieMe you'll find everything! 
+                  </p>
+                <p>
+                  MovieMe app is based on JavaScript and React Native. 
+                </p>
               </div>
+
+              </div>
+            
+
+              </div>
+<!--  -->
+
+
+
            <!-- SCREENSHOTS -->
 
-                        <h2 align="center">Works on iOS and Android</h2>
+                        <div  class="workwithtitle" align="center"> Works on iOS and Android</div>
 
-                        <div class="Rtable Rtable--3cols">
+                        <div class="Rtable Rtable--3cols screenshots">
                         
                           <div class="Rtable-cell"><img
                             src="pics/1.png"
