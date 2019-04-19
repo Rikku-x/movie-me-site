@@ -33,16 +33,55 @@ h2 {
 
 .app-description-text {
     font-size: 22px;
-    padding: 150px;
+    padding: 42px;
     /* shoot GIF on background-color: rgb(241, 228, 228) */
+}
+
+hr {
+    border: 1px solid #6751a3;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 6px
+    /* margin-bottom: 7px; */
+}
+
+.corner-ribbon {
+    width: 200px;
+    background: #8a69ae;
+    position: sticky;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #a2eae0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid 1px
+}
+
+.corner-ribbon.sticky {
+    position: fixed;
+}
+
+.corner-ribbon.top-right {
+    top: 25px;
+    right: -62px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.screenshotsbox {
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.6);
+    height: 50vh;
 }
 
 .gradient {
     padding: 3px;
-    /* background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
     background: #654ea3;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #eaafc8, #654ea3);
@@ -50,6 +89,10 @@ h2 {
 }
 
 .gifs {
+    border-radius: 38px;
+}
+
+.gifs-andriod {
     border-radius: 38px;
 }
 
@@ -84,7 +127,6 @@ h2 {
 
 .Rtable--2cols>.Rtable-cell-slim {
     width: 28%;
-    /* background-color: #efdfde; */
 }
 
 .Rtable--2cols>.Rtable-cell-fat {
@@ -124,10 +166,7 @@ h2 {
     position: relative;
     padding: 0;
     list-style: none;
-    /* background-color: #0f7e9b */
-    /**
-  * Where the magic happens
-  */
+    * Where the magic happens */
     /**
     * Control element - right/left arrows
   */
@@ -510,6 +549,13 @@ circle:nth-of-type(4) {
 img.gal {
     max-width: 100%;
     max-height: 100%;
+    cursor: pointer;
+}
+
+img.gal-android {
+    max-width: 92%;
+    max-height: 92%;
+    margin-top: 9px;
     cursor: pointer;
 }
 
